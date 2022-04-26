@@ -31,35 +31,32 @@ class CCSearch(QWidget):
         mainLayout = QVBoxLayout()
         units = pullFromJson()
 
-        model = self.createUnitItems(units=units)
+        unitItems = self.createUnitItems(units=units)
 
-        self.createFilteredModel(model=model)
+        self.createFilteredModel(unitItems=unitItems)
 
         table = self.createTable()
-        
-        search_field = QLineEdit()
-        search_field.setStyleSheet('font-size: 35px; height: 60px')
-        search_field.textChanged.connect(self.onTextChanged)
-        mainLayout.addWidget(search_field)
+        search_field = self.createSearchField()
 
+        mainLayout.addWidget(search_field)
         mainLayout.addWidget(table)
 
         self.setLayout(mainLayout)
 
     def createUnitItems(self, units):
-        model = QStandardItemModel(len(units), 3)
-        model.setHorizontalHeaderLabels(['CC Unit', 'Attila Unit', 'Tier & Type'])
+        unitItems = QStandardItemModel(len(units), 3)
+        unitItems.setHorizontalHeaderLabels(['CC Unit', 'Attila Unit', 'Tier & Type'])
         for row, unit in enumerate(units):
             ccUnit = QStandardItem(unit['CC Name'])
             attilaUnit = QStandardItem(unit['Atilla Name'])
             unitType = QStandardItem(unit['Unit Type'])
-            model.setItem(row, 0, ccUnit)
-            model.setItem(row, 1, attilaUnit)
-            model.setItem(row, 2, unitType)
-        return model
+            unitItems.setItem(row, 0, ccUnit)
+            unitItems.setItem(row, 1, attilaUnit)
+            unitItems.setItem(row, 2, unitType)
+        return unitItems
 
-    def createFilteredModel(self, model):
-        self.filter_proxy_model.setSourceModel(model)
+    def createFilteredModel(self, unitItems):
+        self.filter_proxy_model.setSourceModel(unitItems)
         self.filter_proxy_model.setFilterCaseSensitivity(Qt.CaseInsensitive)
         self.filter_proxy_model.setFilterKeyColumn(0)
 
@@ -70,6 +67,12 @@ class CCSearch(QWidget):
         table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         table.setModel(self.filter_proxy_model)
         return table
+
+    def createSearchField(self):
+        search_field = QLineEdit()
+        search_field.setStyleSheet('font-size: 35px; height: 60px')
+        search_field.textChanged.connect(self.onTextChanged)
+        return search_field
         
     def onTextChanged(self, text):
         self.filter_proxy_model.setFilterRegExp(QRegExp(text, Qt.CaseInsensitive, QRegExp.FixedString))
