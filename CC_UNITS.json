@@ -1,0 +1,97 @@
+[
+ {
+  "CC Name": "Zeovogha",
+  "Atilla Name": "Elite Nordic Warriors",
+  "Unit Type": "Tier II Sword Infantry"
+ },
+ {
+  "CC Name": "Zeovogha Jiha",
+  "Atilla Name": "Chosen Warriors",
+  "Unit Type": "Tier III Sword Infantry"
+ },
+ {
+  "CC Name": "Broirdys",
+  "Atilla Name": "Nordic Warriors",
+  "Unit Type": "Tier II Sword Infantry"
+ },
+ {
+  "CC Name": "Suge",
+  "Atilla Name": "Nordic Bows",
+  "Unit Type": "Tier II Bow Infantry"
+ },
+ {
+  "CC Name": "Suge Jige",
+  "Atilla Name": "Nordic Bows*",
+  "Unit Type": "Tier II Bow Infantry"
+ },
+ {
+  "CC Name": "Hastage",
+  "Atilla Name": "Nordic Spearman",
+  "Unit Type": "Tier II Spear Infantry"
+ },
+ {
+  "CC Name": "Hastage Jige",
+  "Atilla Name": "Elite Nordic Spearman",
+  "Unit Type": "Tier III Spear Infantry"
+ },
+ {
+  "CC Name": "Pilusi",
+  "Atilla Name": "Nordic Javelinmen",
+  "Unit Type": "Tier I Javelin Infantry"
+ },
+ {
+  "CC Name": "Vliptuch",
+  "Atilla Name": "Mounted Nordic Raiders",
+  "Unit Type": "Tier I Missile Cavalry"
+ },
+ {
+  "CC Name": "Onager",
+  "Atilla Name": "Onager",
+  "Unit Type": "Siege Equipment"
+ },
+ {
+  "CC Name": "Auxillary Infantry",
+  "Atilla Name": "Nordic Spearman ",
+  "Unit Type": "Tier II Spear Infantry"
+ },
+ {
+  "CC Name": "Auxilllary Swordsman",
+  "Atilla Name": "Hearth Guards",
+  "Unit Type": "Tier II Sword Infantry"
+ },
+ {
+  "CC Name": "Auxillary Pikemen",
+  "Atilla Name": "Nordic Pikemen",
+  "Unit Type": "Tier I Pike Infantry"
+ },
+ {
+  "CC Name": "Auxillary Horsemen",
+  "Atilla Name": "Saxon Mounted Warband",
+  "Unit Type": "Tier I Melee Cavalry"
+ },
+ {
+  "CC Name": "Auxillary Lancers",
+  "Atilla Name": "Saxon Lancers",
+  "Unit Type": "Tier I Lancer Cavalry"
+ },
+ {
+  "CC Name": "Al Haras al-Malik",
+  "Atilla Name": "Gesithas",
+  "Unit Type": "Tier III Sword Infantry"
+ },
+ {
+  "CC Name": "Al-Fawaris al-Malik",
+  "Atilla Name": "Nordic Horse Lords",
+  "Unit Type": "Tier II Melee Cavalry"
+ },
+ {
+  "CC Name": "Royal Guard",
+  "Atilla Name": "Chieftan with Gedriht",
+  "Unit Type": "Tier III Sword Infantry"
+ },
+ {
+  "CC Name": "General Guard",
+  "Atilla Name": "Nordic Warlord",
+  "Unit Type": "Tier II Sword Infantry"
+ }
+]
