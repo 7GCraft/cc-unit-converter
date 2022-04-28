@@ -47,9 +47,9 @@ class CCSearch(QWidget):
         unitItems = QStandardItemModel(len(units), 3)
         unitItems.setHorizontalHeaderLabels(['CC Unit', 'Attila Unit', 'Tier & Type'])
         for row, unit in enumerate(units):
-            ccUnit = QStandardItem(unit['CC Name'])
-            attilaUnit = QStandardItem(unit['Atilla Name'])
-            unitType = QStandardItem(unit['Unit Type'])
+            ccUnit = QStandardItem(unit['CC Units'])
+            attilaUnit = QStandardItem(unit['Atilla Units'])
+            unitType = QStandardItem(unit['Tier'])
             unitItems.setItem(row, 0, ccUnit)
             unitItems.setItem(row, 1, attilaUnit)
             unitItems.setItem(row, 2, unitType)
