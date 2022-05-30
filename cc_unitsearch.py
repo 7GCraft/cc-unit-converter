@@ -1,7 +1,7 @@
 import sys
 import json
 
-from PyQt5.QtWidgets import QApplication, QWidget, QLineEdit, QTableView, QHeaderView, QVBoxLayout
+from PyQt5.QtWidgets import QApplication, QWidget, QLineEdit, QTableView, QHeaderView, QVBoxLayout, QTableWidget
 from PyQt5.QtCore import Qt, QSortFilterProxyModel, QRegExp
 from PyQt5.QtGui import QStandardItemModel, QStandardItem
 
@@ -66,6 +66,7 @@ class CCSearch(QWidget):
         table.verticalHeader().setSectionResizeMode(QHeaderView.Stretch)
         table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         table.setModel(self.filter_proxy_model)
+        table.setEditTriggers(QTableWidget.NoEditTriggers)
         return table
 
     def createSearchField(self):
