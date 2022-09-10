@@ -82,7 +82,7 @@ class CCSearch(QWidget):
 def main():
     app = QApplication(sys.argv)
     main = CCSearch()
-    main.setWindowTitle('CC Unit Search Prototype')
+    main.setWindowTitle('CC Unit Search')
     main.show()
     sys.exit(app.exec())
 
