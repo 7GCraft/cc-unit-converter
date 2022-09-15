@@ -8,7 +8,7 @@ a = Analysis(
     ['cc_unitsearch.py'],
     pathex=[],
     binaries=[],
-    datas=[('CC_UNITS.json', '.')],
+    datas=[],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
